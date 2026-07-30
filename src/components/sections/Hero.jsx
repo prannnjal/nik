@@ -120,7 +120,7 @@ export default function Hero({ loaded }) {
         </p>
 
         {/* CTAs */}
-        <div className="hero-cta" style={{ display: 'flex', gap: '1rem', alignItems: 'center', opacity: 0 }}>
+        <div className="hero-cta hero-cta-container" style={{ opacity: 0 }}>
           <button className="btn-primary" style={{ backgroundColor: 'var(--color-ivory)', color: 'var(--color-charcoal)', borderColor: 'var(--color-ivory)' }} id="hero-book-btn">Reserve a Visit</button>
           <a href="#services" style={{ fontFamily: 'var(--font-sans)', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--color-ivory)', textDecoration: 'underline', textUnderlineOffset: '4px' }}>
             Explore Services

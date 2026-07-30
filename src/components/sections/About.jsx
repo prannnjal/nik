@@ -49,7 +49,7 @@ export default function About() {
       </div>
 
       {/* Philosophy */}
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '6rem', alignItems: 'end', marginBottom: '8rem' }}>
+      <div className="about-grid">
         <div>
           <p className="section-label about-line" style={{ marginBottom: '2rem' }}>Our Philosophy</p>
           <h2 className="about-line" style={{ lineHeight: 1.05 }}>
@@ -70,7 +70,7 @@ export default function About() {
       </div>
 
       {/* Stats */}
-      <div className="about-stats" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '3rem', borderTop: '1px solid var(--color-stone)', paddingTop: '4rem' }}>
+      <div className="about-stats about-stats-grid">
         {[
           { num: '14+', label: 'Years of mastery' },
           { num: '6K+', label: 'Guests served' },

@@ -27,7 +27,7 @@ export default function Footer() {
       </div>
 
       {/* Main footer grid */}
-      <div style={{ padding: '6rem 6vw 3rem', display: 'grid', gridTemplateColumns: '2fr 1fr 1fr 1fr', gap: '4rem' }}>
+      <div className="footer-grid">
         {/* Brand */}
         <div>
           <p style={{ fontFamily: 'var(--font-serif)', fontSize: '1.5rem', fontWeight: 400, marginBottom: '1.5rem', letterSpacing: '0.08em', textTransform: 'uppercase' }}>

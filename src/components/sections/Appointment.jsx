@@ -15,7 +15,7 @@ export default function Appointment() {
         background: 'var(--color-ivory)',
       }}
     >
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8rem', alignItems: 'center' }}>
+      <div className="appointment-grid">
 
         {/* Left: intro */}
         <div>
@@ -42,7 +42,7 @@ export default function Appointment() {
         {/* Right: form */}
         <div className="glass" style={{ padding: '3.5rem', borderRadius: '16px' }}>
           <form ref={formRef} onSubmit={e => e.preventDefault()} style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+            <div className="form-grid">
               <input className="form-field" type="text" placeholder="First name" required />
               <input className="form-field" type="text" placeholder="Last name" required />
             </div>
