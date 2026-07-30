@@ -1,0 +1,86 @@
+'use client';
+import { useEffect, useRef } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Link from 'next/link';
+
+gsap.registerPlugin(ScrollTrigger);
+
+export default function Navbar() {
+  const navRef = useRef(null);
+
+  useEffect(() => {
+    // Entrance after loader
+    gsap.fromTo(navRef.current,
+      { y: -80, opacity: 0 },
+      { y: 0, opacity: 1, duration: 1.5, ease: 'power4.out', delay: 2.8 }
+    );
+
+    // Compact on scroll
+    ScrollTrigger.create({
+      start: 'top -80',
+      end: 99999,
+      toggleClass: { className: 'navbar-compact', targets: navRef.current }
+    });
+  }, []);
+
+  const navItems = ['Services', 'About', 'Gallery', 'Appointment'];
+
+  return (
+    <nav
+      ref={navRef}
+      className="glass"
+      style={{
+        position: 'fixed',
+        top: 0,
+        width: '100%',
+        zIndex: 1000,
+        padding: '1.8rem 6vw',
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        transition: 'padding 0.5s var(--ease-premium), background 0.5s',
+        opacity: 0,
+      }}
+    >
+      {/* Logo */}
+      <div style={{
+        fontFamily: 'var(--font-serif)',
+        fontSize: '1.25rem',
+        fontWeight: 500,
+        letterSpacing: '0.08em',
+        textTransform: 'uppercase',
+      }}>
+        Maison Éclat
+      </div>
+
+      {/* Nav links */}
+      <ul style={{ display: 'flex', gap: '2.5rem' }}>
+        {navItems.map((item) => (
+          <li key={item}>
+            <Link
+              href={`#${item.toLowerCase()}`}
+              style={{
+                fontFamily: 'var(--font-sans)',
+                fontSize: '0.78rem',
+                textTransform: 'uppercase',
+                letterSpacing: '0.12em',
+                color: 'var(--color-charcoal)',
+                transition: 'color 0.3s',
+                position: 'relative',
+                paddingBottom: '2px',
+              }}
+            >
+              {item}
+            </Link>
+          </li>
+        ))}
+      </ul>
+
+      {/* CTA */}
+      <button className="btn-primary" style={{ padding: '0.75rem 1.8rem', fontSize: '0.75rem' }}>
+        Reserve a Visit
+      </button>
+    </nav>
+  );
+}
