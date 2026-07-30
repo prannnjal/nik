@@ -29,16 +29,12 @@ export default function Navbar() {
   return (
     <nav
       ref={navRef}
-      className="glass"
+      className="glass nav-container"
       style={{
         position: 'fixed',
         top: 0,
-        width: '100%',
         zIndex: 1000,
         padding: '1.8rem 6vw',
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center',
         transition: 'padding 0.5s var(--ease-premium), background 0.5s',
         opacity: 0,
       }}
@@ -55,7 +51,7 @@ export default function Navbar() {
       </div>
 
       {/* Nav links */}
-      <ul style={{ display: 'flex', gap: '2.5rem' }}>
+      <ul className="nav-links">
         {navItems.map((item) => (
           <li key={item}>
             <Link
@@ -78,7 +74,7 @@ export default function Navbar() {
       </ul>
 
       {/* CTA */}
-      <button className="btn-primary" style={{ padding: '0.75rem 1.8rem', fontSize: '0.75rem' }}>
+      <button className="btn-primary" style={{ padding: '0.75rem 1.8rem', fontSize: '0.75rem', width: 'auto' }}>
         Reserve a Visit
       </button>
     </nav>

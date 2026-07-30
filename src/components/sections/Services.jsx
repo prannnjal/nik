@@ -94,17 +94,14 @@ export default function Services() {
         <div
           key={i}
           ref={el => itemRefs.current[i] = el}
+          className="service-panel-responsive"
           style={{
             position: 'absolute',
             inset: 0,
-            display: 'grid',
-            gridTemplateColumns: '1fr 1fr',
-            alignItems: 'center',
-            padding: '0 6vw',
           }}
         >
           {/* Left: Text */}
-          <div style={{ paddingLeft: '4rem' }}>
+          <div className="service-text-responsive">
             <p className="section-label" style={{ marginBottom: '1.5rem' }}>{svc.num} / {svc.tag}</p>
             <h2 style={{ whiteSpace: 'pre-line', marginBottom: '2rem', fontSize: 'clamp(3rem, 5.5vw, 5.5rem)' }}>
               {svc.title}
@@ -115,7 +112,7 @@ export default function Services() {
           </div>
 
           {/* Right: Dynamic Image */}
-          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%', padding: '4rem' }}>
+          <div className="service-image-container">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img 
               src={svc.img} 

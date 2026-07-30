@@ -72,15 +72,11 @@ export default function Gallery() {
       </div>
 
       {/* Masonry Grid */}
-      <div style={{
-        display: 'grid',
-        gridTemplateColumns: 'repeat(12, 1fr)',
-        gap: '1.2rem',
-      }}>
+      <div className="gallery-grid-responsive">
         {PHOTOS.map((photo, i) => (
           <div
             key={i}
-            className="gallery-img"
+            className="gallery-img gallery-img-responsive"
             data-hover
             style={{
               gridColumn: photo.gridCol,
