@@ -40,15 +40,16 @@ export default function Navbar() {
       }}
     >
       {/* Logo */}
-      <div style={{
-        fontFamily: 'var(--font-serif)',
-        fontSize: '1.25rem',
-        fontWeight: 500,
-        letterSpacing: '0.08em',
-        textTransform: 'uppercase',
-      }}>
-        Maison Éclat
-      </div>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="/logo.jpeg"
+        alt="Secret Salon"
+        style={{
+          height: '48px',
+          width: 'auto',
+          objectFit: 'contain',
+        }}
+      />
 
       {/* Nav links */}
       <ul className="nav-links">

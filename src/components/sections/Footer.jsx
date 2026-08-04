@@ -19,7 +19,7 @@ export default function Footer() {
       }}>
         <h2 style={{ color: 'var(--color-ivory)', fontSize: 'clamp(2rem, 4vw, 3.5rem)', maxWidth: '600px' }}>
           Ready to experience the<br />
-          <em style={{ fontStyle: 'italic', color: 'var(--color-gold)' }}>Maison difference?</em>
+          <em style={{ fontStyle: 'italic', color: 'var(--color-gold)' }}>Secret Salon difference?</em>
         </h2>
         <button className="btn-outline" style={{ color: 'var(--color-ivory)', borderColor: 'var(--color-ivory)', flexShrink: 0 }}>
           Reserve a Visit
@@ -31,7 +31,7 @@ export default function Footer() {
         {/* Brand */}
         <div>
           <p style={{ fontFamily: 'var(--font-serif)', fontSize: '1.5rem', fontWeight: 400, marginBottom: '1.5rem', letterSpacing: '0.08em', textTransform: 'uppercase' }}>
-            Maison Éclat
+            Secret Salon
           </p>
           <p style={{ color: 'rgba(241,238,229,0.45)', fontSize: '0.9rem', lineHeight: 1.8, maxWidth: '280px' }}>
             The intersection of pure ingredients, architectural design, and holistic wellness.
@@ -40,7 +40,7 @@ export default function Footer() {
             <p style={{ fontFamily: 'var(--font-sans)', fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.15em', color: 'var(--color-gold)', marginBottom: '0.5rem' }}>
               Contact
             </p>
-            <p style={{ color: 'rgba(241,238,229,0.55)', fontSize: '0.9rem' }}>hello@maisoneclat.com</p>
+            <p style={{ color: 'rgba(241,238,229,0.55)', fontSize: '0.9rem' }}>hello@secretsalon.com</p>
             <p style={{ color: 'rgba(241,238,229,0.55)', fontSize: '0.9rem' }}>+91 98765 43210</p>
           </div>
         </div>
@@ -78,7 +78,7 @@ export default function Footer() {
         gap: '1rem',
       }}>
         <p style={{ color: 'rgba(241,238,229,0.3)', fontSize: '0.78rem', fontFamily: 'var(--font-sans)' }}>
-          &copy; {new Date().getFullYear()} Maison Éclat. All rights reserved.
+          &copy; {new Date().getFullYear()} Secret Salon. All rights reserved.
         </p>
         <p style={{ color: 'rgba(241,238,229,0.3)', fontSize: '0.78rem', fontFamily: 'var(--font-sans)', fontStyle: 'italic' }}>
           Designed with intention.

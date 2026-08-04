@@ -66,7 +66,7 @@ export default function Gallery() {
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: '4rem' }}>
         <div>
           <p className="section-label" style={{ marginBottom: '1rem' }}>The Atmosphere</p>
-          <h2>Inside the<br /><em style={{ fontStyle: 'italic', color: 'var(--color-gold)' }}>Maison</em></h2>
+          <h2>Inside the<br /><em style={{ fontStyle: 'italic', color: 'var(--color-gold)' }}>Secret Salon</em></h2>
         </div>
         <button className="btn-outline">View All</button>
       </div>

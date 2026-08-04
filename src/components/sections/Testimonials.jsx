@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const TESTIMONIALS = [
   {
-    quote: 'An absolute masterclass in refined aesthetics and personalised care. Maison Éclat has redefined my concept of luxury.',
+    quote: 'An absolute masterclass in refined aesthetics and personalised care. Secret Salon has redefined my concept of luxury.',
     author: 'Elena R.',
     role: 'Vogue Editorial Director',
   },
@@ -70,11 +70,11 @@ export default function Testimonials() {
           muted
           loop
           playsInline
-          style={{ width: '100%', height: '100%', objectFit: 'cover', transform: 'scale(1.08)' }}
+          style={{ width: '100%', height: '100%', objectFit: 'cover', transform: 'scale(1.2)' }}
         />
       </div>
       {/* Dark Overlay */}
-      <div style={{ position: 'absolute', inset: 0, zIndex: -1, background: 'rgba(26,24,20,0.65)' }} />
+      <div style={{ position: 'absolute', inset: 0, zIndex: -1, background: 'radial-gradient(ellipse at center, rgba(26,24,20,0.95) 0%, rgba(26,24,20,0.8) 35%, rgba(26,24,20,0.6) 100%)' }} />
       <div style={{ maxWidth: '900px', margin: '0 auto' }} className="testimonial-content">
         <p className="section-label" style={{ color: 'var(--color-taupe)', marginBottom: '4rem', textAlign: 'center' }}>
           Client Voices

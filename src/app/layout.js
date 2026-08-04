@@ -4,10 +4,10 @@ import Navbar from '@/components/Navbar';
 import CustomCursor from '@/components/CustomCursor';
 
 export const metadata = {
-  title: 'Maison Éclat | Ultra-Premium Luxury Salon',
+  title: 'Secret Salon | Ultra-Premium Luxury Salon',
   description: 'Beauty, Crafted with Elegance. Experience the epitome of quiet luxury — where beauty becomes ritual.',
   openGraph: {
-    title: 'Maison Éclat | Ultra-Premium Luxury Salon',
+    title: 'Secret Salon | Ultra-Premium Luxury Salon',
     description: 'Experience the epitome of quiet luxury.',
     type: 'website',
   },
