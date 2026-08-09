@@ -2,6 +2,7 @@ import './globals.css';
 import SmoothScroll from '@/components/SmoothScroll';
 import Navbar from '@/components/Navbar';
 import CustomCursor from '@/components/CustomCursor';
+import { AuthProvider } from '@/context/AuthContext';
 
 export const metadata = {
   title: 'Secret Salon | Ultra-Premium Luxury Salon',
@@ -17,11 +18,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <CustomCursor />
-        <SmoothScroll>
-          <Navbar />
-          {children}
-        </SmoothScroll>
+        <AuthProvider>
+          <CustomCursor />
+          <SmoothScroll>
+            <Navbar />
+            {children}
+          </SmoothScroll>
+        </AuthProvider>
       </body>
     </html>
   );

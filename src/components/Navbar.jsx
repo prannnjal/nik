@@ -72,12 +72,32 @@ export default function Navbar() {
             </Link>
           </li>
         ))}
+        <li>
+          <Link
+            href="/login"
+            style={{
+              fontFamily: 'var(--font-sans)',
+              fontSize: '0.78rem',
+              textTransform: 'uppercase',
+              letterSpacing: '0.12em',
+              color: 'var(--color-charcoal)',
+              fontWeight: '600',
+              transition: 'color 0.3s',
+              position: 'relative',
+              paddingBottom: '2px',
+            }}
+          >
+            Portal
+          </Link>
+        </li>
       </ul>
 
       {/* CTA */}
-      <button className="btn-primary" style={{ padding: '0.75rem 1.8rem', fontSize: '0.75rem', width: 'auto' }}>
-        Reserve a Visit
-      </button>
+      <Link href="/login" style={{ textDecoration: 'none' }}>
+        <button className="btn-primary" style={{ padding: '0.75rem 1.8rem', fontSize: '0.75rem', width: 'auto' }}>
+          Staff Login
+        </button>
+      </Link>
     </nav>
   );
 }
